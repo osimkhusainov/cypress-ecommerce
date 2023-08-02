@@ -1,0 +1,12 @@
+{
+  "user_id": 990,
+  "email": "testkhealth@testkhealth.com",
+  "fullname": "Khusainov",
+  "username": "Osim",
+  "roles": ["customer"],
+  "address": "1807 Race S",
+  "state": "OH",
+  "city": "Cincinnati",
+  "country": "United States",
+  "created_at": "2023-08-01T19:39:10.284Z"
+}

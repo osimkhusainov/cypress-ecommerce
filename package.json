@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "cy:run": "cypress run --env allure=true",
+    "allure:report": "allure generate --clean -o allure-report",
+    "test": "npm run cy:run || npm run posttest",
+    "posttest": "npm run allure:report",
+    "report:open": "allure serve"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.23.1",
+    "cypress": "^12.17.3"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "@testing-library/cypress": "^9.0.0",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-plugin-stripe-elements": "^1.0.2",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
