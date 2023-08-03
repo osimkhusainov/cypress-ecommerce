@@ -1,6 +1,10 @@
 {
+  "name": "automation-khealth",
+  "author": "Osim Khusainov",
   "scripts": {
-    "test": "npm run cy:run || npm run posttest"
+    "cy:run": "npx cypress run",
+    "cy:open": "npx cypress open",
+    "report:open": "open cypress/reports/html/index.html"
   },
   "dependencies": {
     "cypress": "^12.17.3"
@@ -9,6 +13,7 @@
     "@testing-library/cypress": "^9.0.0",
     "chai-json-schema": "^1.5.1",
     "cypress-mochawesome-reporter": "^3.5.1",
-    "cypress-plugin-stripe-elements": "^1.0.2"
+    "cypress-plugin-stripe-elements": "^1.0.2",
+    "open": "^9.1.0"
   }
 }

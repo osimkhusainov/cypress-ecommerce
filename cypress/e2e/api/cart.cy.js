@@ -2,7 +2,7 @@ import { email, password } from "../../fixtures/testUser.json";
 const apiUrl = Cypress.config("backendBaseUrl");
 
 let quantity = 2;
-describe("Products", () => {
+describe("Adding an item to cart for a logged in user", () => {
   beforeEach(() => {
     cy.request({
       method: "POST",
