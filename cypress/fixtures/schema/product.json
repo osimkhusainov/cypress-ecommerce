@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "avg_rating": {
+      "type": "null"
+    },
+    "count": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "product_id",
+    "name",
+    "price",
+    "description",
+    "image_url",
+    "avg_rating",
+    "count"
+  ]
+}

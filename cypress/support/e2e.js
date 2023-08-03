@@ -14,10 +14,10 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands';
-import 'cypress-mochawesome-reporter/register';
-import '@testing-library/cypress/add-commands';
-import 'cypress-plugin-stripe-elements';
-import '@shelex/cypress-allure-plugin';
+import "./commands";
+import "cypress-mochawesome-reporter/register";
+import "@testing-library/cypress/add-commands";
+import "cypress-plugin-stripe-elements";
+chai.use(require("chai-json-schema"));
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -10,17 +10,17 @@
 //
 //
 // -- This is a parent command --
-import user from '../fixtures/testUser.json';
+import user from "../fixtures/testUser.json";
 
-Cypress.Commands.add('apiLogin', (email, password) => {
-  cy.request('POST', Cypress.config('backendBaseUrl') + 'auth/login', {
+Cypress.Commands.add("apiLogin", (email, password) => {
+  cy.request("POST", Cypress.config("backendBaseUrl") + "auth/login", {
     email: email || user.email,
     password: password || user.password,
   }).then(({ body, status }) => {
     expect(status).to.eq(200);
     cy.log(body);
     // without quotes "" the token will not work
-    localStorage.setItem('token', `"${body.token}"`);
+    localStorage.setItem("token", `"${body.token}"`);
   });
 });
 
@@ -36,4 +36,3 @@ Cypress.Commands.add('apiLogin', (email, password) => {
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
