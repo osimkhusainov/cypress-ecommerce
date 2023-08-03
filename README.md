@@ -11,7 +11,7 @@
 #### Note: Tests contain 3 UI bugs that caught by automated scripts.
 1. Download / clone current repository (`git clone https://github.com/osimkhusainov/cypress-ecommerce.git`)
 2. Use `npm install` in the VSCode terminal
-3. Use `npm run cy:run` to run tests locally or `npm run cy:open` to open Cypress in browser
+3. Use `npm run cy:run` to run tests headlessly or `npm run cy:open` to open Cypress in browser
 4. Once it's done, use `npm run report:open` to open an HTML report in browser
 
 
@@ -20,8 +20,6 @@
 - Mock data files are in `cypress/fixtures/`
 - Reports are in `cypress/reports`
 
-Page object models are in `test/pageobjects/`
-Helper functions are in `test/utils/`
 
 ### Helpful resources:
 Cypress documentation - https://docs.cypress.io/api
